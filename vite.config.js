@@ -3,6 +3,7 @@ import vue from '@vitejs/plugin-vue'
 import basicSsl from '@vitejs/plugin-basic-ssl'
 
 export default defineConfig({
+  base: '/moon-finder/',
   plugins: [vue(), basicSsl()],
   server: {
     https: true,
